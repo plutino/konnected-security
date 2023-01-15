@@ -31,7 +31,7 @@ jobs:
         with:
           command: cp
           source: build/${{ steps.build.outputs.fname }}
-          destination: s3://konnected-io/builds/
+          destination: s3://smarthome.oregon.plutino/konnected-builds/
           aws_access_key_id: ${{ secrets.AWS_ACCESS_KEY_ID }}
           aws_secret_access_key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
-          aws_region: us-east-2
+          aws_region: us-west-2
